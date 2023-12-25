@@ -41,6 +41,7 @@ tput sgr0
 
 list=(
 	arj
+	bash-completion
 	cabextract
 	cifs-utils
 	cronie
@@ -58,6 +59,9 @@ list=(
 	gvfs-mtp
 	gvfs-nfs
 	gvfs-smb
+	libx11
+	libxft
+	libxinerama
 	man-db
 	man-pages
 	mtools

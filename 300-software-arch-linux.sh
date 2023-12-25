@@ -47,7 +47,7 @@ func_category Accessories
 
 list=(
 	exa
-	#variety
+	# variety
 )
 
 count=0
@@ -88,8 +88,8 @@ func_category Development
 list=(
 	flameshot
 	meld
-	#scrot
-	#simplescreenrecorder
+	# scrot
+	# simplescreenrecorder
 )
 
 count=0
@@ -107,11 +107,11 @@ done
 func_category Graphics
 
 list=(
-	#gimp
+	# gimp
 	icoutils
 	imagemagick
-	#inkscape
-	#nomacs
+	# inkscape
+	# nomacs
 )
 
 count=0
@@ -129,7 +129,6 @@ done
 func_category Internet
 
 list=(
-	#chromium
 	firefox
 	qbittorrent
 	telegram-desktop
@@ -170,7 +169,7 @@ func_category Office
 
 list=(
 	evince
-	#libreoffice-fresh
+	# libreoffice-fresh
 	libreoffice-still
 )
 
@@ -210,6 +209,7 @@ func_category System
 
 list=(
 	dconf-editor
+	dialog
 	zsh
 	zsh-autosuggestions
 	zsh-syntax-highlighting

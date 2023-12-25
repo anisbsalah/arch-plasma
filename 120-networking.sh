@@ -43,8 +43,8 @@ list=(
 	avahi
 	bind
 	bridge-utils
+	curl
 	dhclient
-	dialog
 	dnsutils
 	dnsmasq
 	ifplugd
@@ -69,7 +69,7 @@ list=(
 	networkmanager-vpnc
 	nfs-utils
 	nmap
-	nm-cloud-setup
+	# nm-cloud-setup
 	nm-connection-editor
 	nss-mdns
 	ntp
@@ -78,15 +78,16 @@ list=(
 	openssh
 	openvpn
 	openresolv
-	ppp
-	pptpclient
-	rp-pppoe
-	tcpdump
-	vpnc
+	# ppp
+	# pptpclient
+	# rp-pppoe
+	# tcpdump
+	# vpnc
+	wget
 	wireless-regdb
 	wireless_tools # Deprecated
 	wpa_supplicant
-	wvdial
+	# wvdial
 )
 
 count=0
