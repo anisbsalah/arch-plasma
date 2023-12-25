@@ -42,12 +42,10 @@ tput sgr0
 list=(
 	xorg
 	xorg-apps
-	#xorg-drivers
-	xorg-server
-	xorg-xhost
 	xorg-xinit
-	xorg-xkill
-	xorg-xwayland # provides compatibility for native X11 applications that are yet to provide Wayland support
+	# xorg-drivers
+	# xorg-server
+	# xorg-xwayland # Provides compatibility for native X11 applications that are yet to provide Wayland support
 )
 
 count=0
