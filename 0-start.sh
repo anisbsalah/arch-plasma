@@ -23,6 +23,7 @@ echo "
 ██║  ██╗██████╔╝███████╗    ██║     ███████╗██║  ██║███████║██║ ╚═╝ ██║██║  ██║
 ╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝
 "
+sudo pacman -Sy
 ./100-xorg.sh |& tee 100-xorg.log
 ./110-drivers.sh |& tee 110-drivers.log
 ./120-networking.sh |& tee 120-networking.log

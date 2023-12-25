@@ -51,7 +51,7 @@ echo "##########################################################################
 tput sgr0
 
 # Define AUR array
-AUR=("yay" "yay-bin" "paru" "paru-bin" "trizen" "pikaur" "aurman" "pacaur" "pakku" "aura")
+AUR=("yay" "yay-bin" "paru" "paru-bin" "trizen" "pikaur" "pakku" "aurman" "aura")
 
 # Print AUR array in multiple columns
 num_columns=2
@@ -142,12 +142,12 @@ if ((invalid_selection == 0)); then
 		aur_command="trizen"
 	elif command -v pikaur >/dev/null 2>&1; then
 		aur_command="pikaur"
-	elif command -v aurman >/dev/null 2>&1; then
-		aur_command="aurman"
-	elif command -v pacaur >/dev/null 2>&1; then
-		aur_command="pacaur"
 	elif command -v pakku >/dev/null 2>&1; then
 		aur_command="pakku"
+	elif command -v aurman >/dev/null 2>&1; then
+		aur_command="aurman"
+	elif command -v aura >/dev/null 2>&1; then
+		aur_command="sudo aura"
 	fi
 fi
 

@@ -35,7 +35,7 @@ func_install() {
 echo
 tput setaf 4
 echo "######################################################################################################"
-echo "Installation of Printer software"
+echo "Installation of Printing software"
 echo "######################################################################################################"
 tput sgr0
 
