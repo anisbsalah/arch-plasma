@@ -122,6 +122,7 @@ done
 func_drivers Input
 
 list=(
+	libinput
 	xf86-input-elographics
 	xf86-input-evdev
 	xf86-input-libinput
