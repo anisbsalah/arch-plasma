@@ -29,7 +29,7 @@ sudo pacman -Sy
 ./120-networking.sh |& tee 120-networking.log
 ./130-sound.sh |& tee 130-sound.log
 ./140-bluetooth.sh |& tee 140-bluetooth.log
-./150-printers.sh |& tee 150-printers.log
+./150-printing.sh |& tee 150-printing.log
 ./160-laptop.sh |& tee 160-laptop.log
 ./170-system-utils.sh |& tee 170-system-utils.log
 ./180-fonts.sh |& tee 180-fonts.log
@@ -39,3 +39,11 @@ sudo pacman -Sy
 ./400-software-AUR.sh |& tee 400-software-AUR.log
 # ./500-software-arcolinux.sh |& tee 500-software-arcolinux.log
 # ./510-additional-arcolinux-software.sh |& tee 510-additional-arcolinux-software.log
+echo "
+██████╗  ██████╗ ███╗   ██╗███████╗
+██╔══██╗██╔═══██╗████╗  ██║██╔════╝
+██║  ██║██║   ██║██╔██╗ ██║█████╗  
+██║  ██║██║   ██║██║╚██╗██║██╔══╝  
+██████╔╝╚██████╔╝██║ ╚████║███████╗
+╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+"
