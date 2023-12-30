@@ -35,62 +35,66 @@ func_install() {
 echo
 tput setaf 4
 echo "######################################################################################################"
-echo "Installation of System Utils"
+echo "Installation of System Utilities"
 echo "######################################################################################################"
 tput sgr0
 
 list=(
+	### Documentation ----------------------------------------------------
+	zstd
+	man-db
+	man-pages
+	texinfo
+	### Archiving & compression ------------------------------------------
 	arj
-	bash-completion
 	cabextract
+	file-roller
+	gzip
+	lzop
+	p7zip
+	sharutils
+	unace
+	unarchiver
+	unrar
+	unzip
+	xz
+	zip
+	### Disks ------------------------------------------------------------
+	btrfs-progs
 	cifs-utils
-	cronie
-	#cryfs
+	# cryfs
 	dosfstools
 	e2fsprogs
-	#encfs
 	exfat-utils
+	# encfs
 	filelight
-	file-roller
-	#gocryptfs
+	fuse2
+	fuse3
+	fuseiso
+	# gocryptfs
+	gpart
+	gparted
 	gvfs
 	gvfs-afc
 	gvfs-gphoto2
 	gvfs-mtp
 	gvfs-nfs
 	gvfs-smb
-	libx11
-	libxft
-	libxinerama
-	man-db
-	man-pages
+	ifuse
 	mtools
 	mtpfs
 	nfs-utils
 	nilfs-utils
 	ntfs-3g
 	os-prober
-	partclone
-	partimage
-	p7zip
-	reflector
-	rsync
-	sharutils
+	# partclone
+	# partimage
 	squashfs-tools
 	sshfs
-	texinfo
 	udiskie
 	udisks2
-	unace
-	unarchiver
-	unrar
-	unzip
 	usbutils
 	uudeview
-	xdg-utils
-	xdg-user-dirs
-	xz
-	zip
 )
 
 count=0

@@ -35,60 +35,197 @@ func_install() {
 echo
 tput setaf 4
 echo "######################################################################################################"
-echo "Installation of Networking utils"
+echo "Installation of kde-applications group"
 echo "######################################################################################################"
 tput sgr0
 
 list=(
-	avahi
-	bind
-	bridge-utils
-	curl
-	dhclient
-	dnsutils
-	dnsmasq
-	git
-	ifplugd
-	inetutils
-	ipset
-	iptables-nft
-	iw
-	iwd
-	mobile-broadband-provider-info
-	modemmanager
-	ndisc6
-	net-tools
-	netctl
-	networkmanager
-	network-manager-applet
-	networkmanager-l2tp
-	networkmanager-openconnect
-	networkmanager-openvpn
-	networkmanager-pptp
-	networkmanager-qt5
-	networkmanager-strongswan
-	networkmanager-vpnc
-	nfs-utils
-	nmap
-	# nm-cloud-setup
-	nm-connection-editor
-	nss-mdns
-	ntp
-	openbsd-netcat
-	openconnect
-	openssh
-	openvpn
-	openresolv
-	# ppp
-	# pptpclient
-	# rp-pppoe
-	# tcpdump
-	# vpnc
-	wget
-	wireless-regdb
-	wireless_tools # Deprecated
-	wpa_supplicant
-	# wvdial
+	akonadi-calendar-tools
+	akonadi-import-wizard
+	akonadiconsole
+	akregator
+	alligator
+	angelfish
+	arianna
+	ark
+	artikulate
+	audiocd-kio
+	audiotube
+	blinken
+	bomber
+	bovo
+	cantor
+	cervisia
+	colord-kde
+	dolphin
+	dolphin-plugins
+	dragon
+	elisa
+	falkon
+	ffmpegthumbs
+	filelight
+	ghostwriter
+	granatier
+	grantlee-editor
+	gwenview
+	itinerary
+	juk
+	k3b
+	kaddressbook
+	kajongg
+	kalarm
+	kalgebra
+	kalk
+	kalzium
+	kamera
+	kamoso
+	kanagram
+	kapman
+	kapptemplate
+	kasts
+	kate
+	katomic
+	kbackup
+	kblackbox
+	kblocks
+	kbounce
+	kbreakout
+	kbruch
+	kcachegrind
+	kcalc
+	kcharselect
+	kclock
+	kcolorchooser
+	kcron
+	kde-dev-scripts
+	kde-dev-utils
+	kde-inotify-survey
+	kdebugsettings
+	kdeconnect
+	kdegraphics-thumbnailers
+	kdenetwork-filesharing
+	kdenlive
+	kdepim-addons
+	kdesdk-kio
+	kdesdk-thumbnailers
+	kdevelop
+	kdevelop-php
+	kdevelop-python
+	kdf
+	kdialog
+	kdiamond
+	keditbookmarks
+	keysmith
+	kfind
+	kfourinline
+	kgeography
+	kget
+	kgoldrunner
+	kgpg
+	khangman
+	khelpcenter
+	kig
+	kigo
+	killbots
+	kimagemapeditor
+	kio-admin
+	kio-extras
+	kio-gdrive
+	kio-zeroconf
+	kirigami-gallery
+	kiriki
+	kiten
+	kjournald
+	kjumpingcube
+	kleopatra
+	klettres
+	klickety
+	klines
+	kmag
+	kmahjongg
+	kmail
+	kmail-account-wizard
+	kmines
+	kmix
+	kmousetool
+	kmouth
+	kmplot
+	knavalbattle
+	knetwalk
+	knights
+	knotes
+	koko
+	kolf
+	kollision
+	kolourpaint
+	kompare
+	kongress
+	konqueror
+	konquest
+	konsole
+	kontact
+	kontrast
+	konversation
+	kopete
+	korganizer
+	kpat
+	krdc
+	krecorder
+	kreversi
+	krfb
+	kruler
+	kshisen
+	ksirk
+	ksnakeduel
+	kspaceduel
+	ksquares
+	ksudoku
+	ksystemlog
+	kteatime
+	ktimer
+	ktorrent
+	ktouch
+	ktrip
+	ktuberling
+	kturtle
+	kubrick
+	kwalletmanager
+	kwave
+	kweather
+	kwordquiz
+	lokalize
+	lskat
+	marble
+	markdownpart
+	mbox-importer
+	merkuro
+	minuet
+	neochat
+	okular
+	palapeli
+	parley
+	partitionmanager
+	picmi
+	pim-data-exporter
+	pim-sieve-editor
+	plasmatube
+	poxml
+	print-manager
+	rocs
+	signon-kwallet-extension
+	skanlite
+	skanpage
+	skladnik
+	spectacle
+	step
+	svgpart
+	sweeper
+	telly-skout
+	tokodon
+	umbrello
+	xwaylandvideobridge
+	yakuake
+	zanshin
 )
 
 count=0
@@ -102,20 +239,6 @@ for name in "${list[@]}"; do
 done
 
 ###############################################################################
-
-echo
-tput setaf 5
-echo "######################################################################################################"
-echo "Enabling services"
-echo "######################################################################################################"
-echo
-tput sgr0
-
-sudo systemctl enable avahi-daemon.service
-sudo systemctl enable NetworkManager.service
-sudo systemctl enable ntpd.service
-sudo systemctl enable sshd.service
-sudo systemctl enable wpa_supplicant.service
 
 echo
 tput setaf 6

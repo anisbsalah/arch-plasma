@@ -120,18 +120,26 @@ if ((invalid_selection == 0)); then
 	sudo pacman -S --noconfirm --needed base-devel git
 
 	for aur in "${selected_aur[@]}"; do
-		echo
-		tput setaf 3
-		echo "######################################################################################################"
-		echo "################# Installing '${aur}'..."
-		echo "######################################################################################################"
-		echo
-		tput sgr0
-		(
-			git clone "https://aur.archlinux.org/${aur}.git" "/tmp/${aur}"
-			cd "/tmp/${aur}" || exit 1
-			makepkg -si --noconfirm --needed
-		)
+		if pacman -Qi "${aur}" &>/dev/null; then
+			tput setaf 2
+			echo "######################################################################################################"
+			echo "################# '${aur}' is already installed"
+			echo "######################################################################################################"
+			tput sgr0
+		else
+			echo
+			tput setaf 3
+			echo "######################################################################################################"
+			echo "################# Installing '${aur}'..."
+			echo "######################################################################################################"
+			echo
+			tput sgr0
+			(
+				git clone "https://aur.archlinux.org/${aur}.git" "/tmp/${aur}"
+				cd "/tmp/${aur}" || exit 1
+				makepkg -si --noconfirm --needed
+			)
+		fi
 	done
 
 	if command -v yay >/dev/null 2>&1; then
@@ -157,10 +165,11 @@ func_category Any_software_from_AUR
 
 list=(
 	archlinux-tweak-tool-git
-	arc-gtk-theme
 	arc-kde-git
 	brave-bin
+	hardcode-fixer-git
 	librewolf-bin
+	vscodium-bin
 )
 
 count=0
@@ -172,6 +181,11 @@ for name in "${list[@]}"; do
 	tput sgr0
 	func_install "${name}"
 done
+
+###############################################################################
+
+echo "[*] Fixing hardcoded icon paths for applications - Wait for it..."
+sudo hardcode-fixer
 
 ###############################################################################
 

@@ -57,7 +57,6 @@ list=(
 	xfce4-terminal
 	arcolinux-xfce-git
 	arcolinux-local-xfce4-git
-	surfn-arc-breeze-icons-git
 )
 
 count=0

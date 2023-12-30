@@ -62,8 +62,9 @@ list=(
 	audiocd-kio
 	dolphin
 	dolphin-plugins
-	egl-wayland
 	extra-cmake-modules
+	ffmpegthumbs
+	ghostwriter
 	gwenview
 	kate
 	kcodecs5
@@ -76,6 +77,7 @@ list=(
 	kimageformats5
 	kinit
 	kio-fuse
+	kompare
 	konsole
 	ksysguard
 	networkmanager-qt5
@@ -88,6 +90,7 @@ list=(
 	spectacle
 	svgpart
 	xsettingsd
+	xwaylandvideobridge
 	yakuake
 )
 
@@ -100,9 +103,6 @@ for name in "${list[@]}"; do
 	tput sgr0
 	func_install "${name}"
 done
-
-#echo "Fixing hardcoded icon paths for applications - Wait for it"
-#sudo hardcode-fixer
 
 ###############################################################################
 

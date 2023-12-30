@@ -31,14 +31,17 @@ sudo pacman -Sy
 ./140-bluetooth.sh |& tee 140-bluetooth.log
 ./150-printing.sh |& tee 150-printing.log
 ./160-laptop.sh |& tee 160-laptop.log
-./170-system-utils.sh |& tee 170-system-utils.log
+./170-system-utilities.sh |& tee 170-system-utilities.log
 ./180-fonts.sh |& tee 180-fonts.log
-./200-plasma.sh |& tee 200-plasma.log
+./200-plasma-desktop.sh |& tee 200-plasma-desktop.log
 ./210-plasma-specific-software.sh |& tee 210-plasma-specific-software.log
+# ./220-plasma-kde-applications-group.sh |& tee 220-plasma-kde-applications-group.log
+# ./230-plasma-kde-groups.sh |& tee 230-plasma-kde-groups.log
 ./300-software-arch-linux.sh |& tee 300-software-arch-linux.log
 ./400-software-AUR.sh |& tee 400-software-AUR.log
 # ./500-software-arcolinux.sh |& tee 500-software-arcolinux.log
 # ./510-additional-arcolinux-software.sh |& tee 510-additional-arcolinux-software.log
+
 echo "
 ██████╗  ██████╗ ███╗   ██╗███████╗
 ██╔══██╗██╔═══██╗████╗  ██║██╔════╝

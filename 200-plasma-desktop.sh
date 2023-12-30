@@ -38,7 +38,6 @@ function_plasma() {
 		bluedevil
 		breeze
 		breeze-gtk
-		breeze-grub
 		breeze-plymouth
 		discover
 		drkonqi
@@ -65,8 +64,8 @@ function_plasma() {
 		libkscreen
 		libksysguard
 		milou
-		#oxygen
-		#oxygen-sounds
+		oxygen
+		oxygen-sounds
 		plasma-browser-integration
 		plasma-desktop
 		plasma-disks
@@ -192,6 +191,16 @@ echo
 tput sgr0
 
 sudo systemctl enable sddm.service -f
+
+echo
+tput setaf 5
+echo "######################################################################################################"
+echo "Creating user directories"
+echo "######################################################################################################"
+echo
+tput sgr0
+
+sudo pacman -S --noconfirm --needed xdg-utils xdg-user-dirs
 
 echo
 tput setaf 6
