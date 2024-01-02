@@ -119,15 +119,16 @@ if ((invalid_selection == 0)); then
 	# Install dependencies
 	sudo pacman -S --noconfirm --needed base-devel git
 
+	# Install selected AUR helper(s)
 	for aur in "${selected_aur[@]}"; do
-		if pacman -Qi "${aur}" &>/dev/null; then
+		echo
+		if pacman -Qi "${aur%-bin}" &>/dev/null || pacman -Qi "$aur" &>/dev/null; then
 			tput setaf 2
 			echo "######################################################################################################"
-			echo "################# '${aur}' is already installed"
+			echo "################# '${aur%-bin}' is already installed"
 			echo "######################################################################################################"
 			tput sgr0
 		else
-			echo
 			tput setaf 3
 			echo "######################################################################################################"
 			echo "################# Installing '${aur}'..."
@@ -141,22 +142,22 @@ if ((invalid_selection == 0)); then
 			)
 		fi
 	done
+fi
 
-	if command -v yay >/dev/null 2>&1; then
-		aur_command="yay"
-	elif command -v paru >/dev/null 2>&1; then
-		aur_command="paru"
-	elif command -v trizen >/dev/null 2>&1; then
-		aur_command="trizen"
-	elif command -v pikaur >/dev/null 2>&1; then
-		aur_command="pikaur"
-	elif command -v pakku >/dev/null 2>&1; then
-		aur_command="pakku"
-	elif command -v aurman >/dev/null 2>&1; then
-		aur_command="aurman"
-	elif command -v aura >/dev/null 2>&1; then
-		aur_command="sudo aura"
-	fi
+if command -v yay >/dev/null 2>&1; then
+	aur_command="yay"
+elif command -v paru >/dev/null 2>&1; then
+	aur_command="paru"
+elif command -v trizen >/dev/null 2>&1; then
+	aur_command="trizen"
+elif command -v pikaur >/dev/null 2>&1; then
+	aur_command="pikaur"
+elif command -v pakku >/dev/null 2>&1; then
+	aur_command="pakku"
+elif command -v aurman >/dev/null 2>&1; then
+	aur_command="aurman"
+elif command -v aura >/dev/null 2>&1; then
+	aur_command="sudo aura"
 fi
 
 ###############################################################################
