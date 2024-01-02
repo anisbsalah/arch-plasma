@@ -68,7 +68,7 @@ echo "##########################################################################
 echo
 tput sgr0
 
-echo "[*] Set X11 keymap to: fr"
+echo "> Set X11 keymap to: fr"
 sudo localectl set-x11-keymap fr
 
 echo
