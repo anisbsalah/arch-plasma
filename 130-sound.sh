@@ -56,9 +56,10 @@ function_pipewire() {
 		lib32-pipewire-jack
 		gst-plugin-pipewire
 		gstreamer
-		gst-plugins-good
+		gst-libav
 		gst-plugins-bad
 		gst-plugins-base
+		gst-plugins-good
 		gst-plugins-ugly
 		pavucontrol
 		playerctl
@@ -103,9 +104,10 @@ function_pulseaudio() {
 		lib32-alsa-plugins
 		lib32-libpulse
 		gstreamer
-		gst-plugins-good
+		gst-libav
 		gst-plugins-bad
 		gst-plugins-base
+		gst-plugins-good
 		gst-plugins-ugly
 		pavucontrol
 		playerctl
