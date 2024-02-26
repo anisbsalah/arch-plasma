@@ -52,8 +52,9 @@ list=(
 	# gitahead
 	hardcode-fixer-git
 	libadwaita-without-adwaita-git
-	mintstick-git
 	# librewolf-bin
+	mintstick-git
+	oh-my-zsh-git
 	sublime-text-4
 	ttf-icomoon-feather
 	ventoy-bin
