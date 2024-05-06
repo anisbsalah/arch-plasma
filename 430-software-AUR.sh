@@ -36,7 +36,7 @@ func_category() {
 	echo
 	tput setaf 4
 	echo "######################################################################################################"
-	echo "Installing software for category '$1'"
+	echo "> Installing software for category '$1'"
 	echo "######################################################################################################"
 	tput sgr0
 }
@@ -46,7 +46,7 @@ func_category() {
 echo
 tput setaf 4
 echo "######################################################################################################"
-echo "> Installing AUR packages"
+echo "Installing AUR packages"
 echo "######################################################################################################"
 echo
 tput sgr0
@@ -105,8 +105,38 @@ done
 
 ###############################################################################
 
-#echo "[*] Fixing hardcoded icon paths for applications - Wait for it..."
-#sudo hardcode-fixer
+func_category Any_software_from_arcolinux_repositories
+
+list=(
+	# archlinux-tweak-tool-git
+	arcolinux-sddm-simplicity
+	brave-bin
+	# gitahead
+	hardcode-fixer-git
+	libadwaita-without-adwaita-git
+	# librewolf-bin
+	mintstick-git
+	oh-my-zsh-git
+	sublime-text-4
+	ttf-icomoon-feather
+	ventoy-bin
+	vscodium-bin
+)
+
+count=0
+for name in "${list[@]}"; do
+	count=$((count + 1))
+	echo
+	tput setaf 3
+	echo "Package nr. ${count}) ${name}"
+	tput sgr0
+	func_install "${name}"
+done
+
+###############################################################################
+
+echo "[*] Fixing hardcoded icon paths for applications - Wait for it..."
+sudo hardcode-fixer
 
 ###############################################################################
 
