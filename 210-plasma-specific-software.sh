@@ -67,14 +67,14 @@ list=(
 	ghostwriter
 	gwenview
 	kate
-	kcodecs5
-	kcoreaddons5
+	kcodecs
+	kcoreaddons
 	kcron
 	kdeconnect
 	kdegraphics-thumbnailers
 	kdenetwork-filesharing
 	kdialog
-	kimageformats5
+	kimageformats
 	kinit
 	kio-fuse
 	kompare
@@ -86,7 +86,7 @@ list=(
 	partitionmanager
 	plasma-wayland-session
 	print-manager
-	solid5
+	solid
 	spectacle
 	svgpart
 	xsettingsd
