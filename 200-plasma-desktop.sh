@@ -48,7 +48,7 @@ function_plasma() {
 		kdecoration
 		kdeplasma-addons
 		kgamma
-		khotkeys
+		kglobalacceld
 		kinfocenter
 		kmenuedit
 		kpipewire
@@ -57,15 +57,19 @@ function_plasma() {
 		ksshaskpass
 		ksystemstats
 		kwallet-pam
-		kwayland-integration
+		kwayland
 		kwin
 		kwrited
 		layer-shell-qt
 		libkscreen
 		libksysguard
+		libplasma
 		milou
+		ocean-sound-theme
 		oxygen
 		oxygen-sounds
+		plasma-activities
+		plasma-activities-stats
 		plasma-browser-integration
 		plasma-desktop
 		plasma-disks
@@ -80,11 +84,15 @@ function_plasma() {
 		plasma-welcome
 		plasma-workspace
 		plasma-workspace-wallpapers
+		plasma5support
 		plymouth-kcm
 		polkit-kde-agent
 		powerdevil
+		print-manager
+		qqc2-breeze-style
 		sddm-kcm
 		systemsettings
+		wacomtablet
 		xdg-desktop-portal-kde
 	)
 
