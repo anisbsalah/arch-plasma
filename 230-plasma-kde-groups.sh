@@ -46,6 +46,7 @@ func_category() {
 func_category kde-accessibility
 
 list=(
+	accessibility-inspector
 	kmag
 	kmousetool
 	kmouth
@@ -194,6 +195,7 @@ done
 func_category kde-multimedia
 
 list=(
+	audex
 	audiocd-kio
 	audiotube
 	dragon
@@ -235,7 +237,6 @@ list=(
 	kio-zeroconf
 	konqueror
 	konversation
-	kopete
 	krdc
 	krfb
 	ktorrent
@@ -372,7 +373,10 @@ func_category kde-utilities
 list=(
 	ark
 	filelight
+	francis
+	isoimagewriter
 	kalk
+	kalm
 	kate
 	kbackup
 	kcalc

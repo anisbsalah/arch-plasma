@@ -47,6 +47,8 @@ func_category Additional-distro-specific
 
 list=(
 	# kde-accessibility-meta
+	# kde-applications-meta
+	# kde-development-environment-meta
 	# kde-education-meta
 	# kde-games-meta
 	# kde-graphics-meta
@@ -79,12 +81,12 @@ list=(
 	kio-fuse
 	kompare
 	konsole
-	ksysguard
+	libksysguard
 	networkmanager-qt5
 	okular
-	packagekit-qt5
+	packagekit-qt6
 	partitionmanager
-	plasma-wayland-session
+	plasma-wayland-protocols
 	print-manager
 	solid
 	spectacle
